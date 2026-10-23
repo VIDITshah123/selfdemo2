@@ -43,17 +43,26 @@ export default function VipConsultationModal({ isOpen, onClose }) {
 
         {!submitted ? (
           <div>
-            {/* Header */}
-            <div className="mb-6">
-              <span className="text-[11px] uppercase tracking-[0.2em] font-semibold text-[#c5a059] block mb-1">
-                Private Advisory
-              </span>
-              <h3 className="font-serif text-2xl sm:text-3xl font-light text-white">
-                Book VIP Consultation & Portfolio
-              </h3>
-              <p className="text-xs text-[#d8c5b6] mt-1 font-light">
-                Direct access to off-market inventory, developer pre-launch discounts, and Golden Visa processing.
-              </p>
+            {/* Opulent Title Card Banner */}
+            <div className="relative mb-6 p-6 rounded-2xl bg-gradient-to-r from-[#967848] via-[#b89047] to-[#886934] text-white shadow-xl border border-[#f0dbaf]/40 overflow-hidden">
+              <div className="absolute inset-0 opacity-15 pointer-events-none">
+                <svg className="w-full h-full" viewBox="0 0 300 150" fill="none">
+                  <circle cx="280" cy="20" r="100" stroke="white" strokeWidth="1.5" />
+                  <path d="M-20 180 L320 -20" stroke="white" strokeWidth="1" />
+                </svg>
+              </div>
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 backdrop-blur-sm text-[10px] uppercase tracking-[0.2em] font-bold text-white mb-2">
+                  <ShieldCheck className="w-3 h-3 text-white" />
+                  <span>Private Advisory Access</span>
+                </div>
+                <h3 className="font-serif text-2xl sm:text-3xl font-normal text-white drop-shadow-sm">
+                  Book VIP Consultation & Portfolio
+                </h3>
+                <p className="text-xs text-[#fdf8f0]/95 mt-1.5 font-light leading-relaxed">
+                  Direct allocation to developer inventory, off-market penthouses, and expedited 10-Year UAE Golden Visa processing.
+                </p>
+              </div>
             </div>
 
             {/* Form */}

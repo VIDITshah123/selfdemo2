@@ -32,8 +32,9 @@ export default function Navbar({ onOpenConsultation, activeCurrency, onCurrencyC
       ]
     },
     { label: 'Areas', href: '#areas-section' },
-    { label: 'About us', href: '#leadership-section' },
-    { label: 'List Your Property', href: '#contact-section' },
+    { label: 'Leadership', href: '#leadership-section' },
+    { label: 'Yield Calculator', href: '#roi-calculator' },
+    { label: 'Contact', href: '#contact-us' },
   ];
 
   return (
@@ -169,10 +170,10 @@ export default function Navbar({ onOpenConsultation, activeCurrency, onCurrencyC
           <div className="flex items-center gap-3 sm:gap-4">
             <button
               onClick={onOpenConsultation}
-              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-white hover:bg-[#5c0d13] text-[#5c0d13] hover:text-white border border-[#5c0d13]/30 hover:border-[#5c0d13] text-xs font-semibold tracking-wide transition-all shadow-sm hover:shadow-md cursor-pointer group"
+              className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#b89047] via-[#c5a059] to-[#9e7a3a] hover:from-[#5c0d13] hover:to-[#7e131d] text-white border border-[#dfbe78]/60 text-xs font-semibold tracking-wide transition-all shadow-[0_4px_16px_rgba(184,144,71,0.3)] hover:shadow-lg cursor-pointer group"
             >
-              <span>Get A Free Consultation</span>
-              <ArrowUpRight className="w-3.5 h-3.5 text-[#5c0d13] group-hover:text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              <span>Book A Consultation</span>
+              <ArrowUpRight className="w-3.5 h-3.5 text-white group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
             </button>
 
             {/* Mobile Hamburger Toggle */}

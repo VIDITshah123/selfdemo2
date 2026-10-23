@@ -8,6 +8,7 @@ import OffPlanShowcase from './components/OffPlanShowcase';
 import MeetLeaders from './components/MeetLeaders';
 import TestimonialsWall from './components/TestimonialsWall';
 import RoiCalculator from './components/RoiCalculator';
+import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import VipConsultationModal from './components/VipConsultationModal';
@@ -99,7 +100,10 @@ export default function App() {
         onOpenConsultation={() => setIsConsultationOpen(true)}
       />
 
-      {/* 10. Global Comprehensive Footer */}
+      {/* 10. NEW: Dedicated Contact Us Form Section */}
+      <ContactSection />
+
+      {/* 11. Global Comprehensive Footer */}
       <Footer 
         onOpenConsultation={() => setIsConsultationOpen(true)}
       />

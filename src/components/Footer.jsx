@@ -106,7 +106,7 @@ export default function Footer({ onOpenConsultation }) {
                 </a>
               </li>
               <li>
-                <a href="#contact-section" className="hover:text-white transition-colors text-[#c5a059]">
+                <a href="#contact-us" className="hover:text-white transition-colors text-[#c5a059]">
                   List Your Property
                 </a>
               </li>

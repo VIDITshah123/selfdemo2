@@ -43,10 +43,11 @@
   --text-dark: #1b1615;
   --text-dark-muted: #5e544e;
 
-  /* Typography */
-  --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
-  --font-cinzel: 'Cinzel', 'Playfair Display', serif;
-  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  /* Typography: Cormorant Garamond, Cinzel, Outfit */
+  --font-serif: 'Cormorant Garamond', 'Marcellus', 'Italiana', Georgia, serif;
+  --font-cinzel: 'Cinzel', 'Italiana', serif;
+  --font-display: 'Cormorant Garamond', 'Cinzel', serif;
+  --font-sans: 'Outfit', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 
   /* Elevation & Shadows */
   --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.25);

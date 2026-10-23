@@ -25,15 +25,17 @@ export default {
         },
         sand: {
           50: '#fbf9f6',
-          100: '#ede0d4',
+          100: '#f4efe6',
+          200: '#eae2d3',
           300: '#cfbda9',
           500: '#9e8a77',
         }
       },
       fontFamily: {
-        serif: ['"Playfair Display"', '"Cormorant Garamond"', 'Georgia', 'serif'],
-        cinzel: ['Cinzel', '"Playfair Display"', 'serif'],
-        sans: ['"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        serif: ['"Cormorant Garamond"', '"Marcellus"', '"Italiana"', 'Georgia', 'serif'],
+        cinzel: ['"Cinzel"', '"Italiana"', 'serif'],
+        display: ['"Cormorant Garamond"', '"Cinzel"', 'serif'],
+        sans: ['"Outfit"', '"Plus Jakarta Sans"', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
       },
       animation: {
         'spin-slow': 'spinSlow 20s linear infinite',

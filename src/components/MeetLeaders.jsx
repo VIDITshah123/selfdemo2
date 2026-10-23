@@ -37,14 +37,12 @@ export default function MeetLeaders({ onOpenConsultation }) {
       (entries) => {
         if (entries[0].isIntersecting && !statsAnimated) {
           setStatsAnimated(true);
-          // Animate counters
           const duration = 1800;
           const startTime = performance.now();
 
           const updateCounters = (currentTime) => {
             const elapsed = currentTime - startTime;
             const progress = Math.min(elapsed / duration, 1);
-            // Ease out quart
             const ease = 1 - Math.pow(1 - progress, 4);
 
             setCounters({
@@ -81,8 +79,8 @@ export default function MeetLeaders({ onOpenConsultation }) {
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
     setCardTilt({
-      x: -((y - centerY) / centerY) * 8, // rotateX
-      y: ((x - centerX) / centerX) * 8,  // rotateY
+      x: -((y - centerY) / centerY) * 8,
+      y: ((x - centerX) / centerX) * 8,
       glareX: (x / rect.width) * 100,
       glareY: (y / rect.height) * 100
     });
@@ -93,64 +91,56 @@ export default function MeetLeaders({ onOpenConsultation }) {
   };
 
   // Parallax offsets
-  const duneParallax = (scrollProgress - 0.5) * 120; // -60px to +60px
-  const quoteFloat = (scrollProgress - 0.5) * -30;
+  const duneParallax = (scrollProgress - 0.5) * 80;
+  const quoteFloat = (scrollProgress - 0.5) * -25;
 
   return (
     <section 
       ref={sectionRef}
       id="leadership-section" 
-      className="relative py-28 sm:py-36 bg-[#260306] text-white overflow-hidden"
+      className="relative py-28 sm:py-36 bg-[#faf7f2] text-gray-900 overflow-hidden border-y border-[#c5a059]/25"
     >
-      {/* Background Texture: Luxury Crimson Sand Dunes with Multi-Layer Parallax Drift */}
+      {/* Background Subtle Sandstone Architectural Grid */}
       <div 
-        className="absolute inset-0 z-0 overflow-hidden pointer-events-none will-change-transform"
+        className="absolute inset-0 z-0 overflow-hidden pointer-events-none opacity-30 will-change-transform"
         style={{
-          transform: `translate3d(0, ${duneParallax}px, 0) scale(1.18)`,
+          transform: `translate3d(0, ${duneParallax}px, 0)`,
           transition: 'transform 0.08s linear'
         }}
       >
-        <img 
-          src={LEADERSHIP_INFO.duneBg} 
-          alt="Dubai Crimson Sand Dunes Background" 
-          className="w-full h-full object-cover object-center filter brightness-[0.45] contrast-[1.25]"
-        />
-        {/* Deep Velvet Burgundy & Shadow Vignette Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#1c0204]/95 via-[#38050a]/85 to-[#1c0204]/95" />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#580b12] via-transparent to-[#1c0204]" />
-      </div>
-
-      {/* Floating Gold Dust Particles Accent */}
-      <div className="absolute inset-0 pointer-events-none z-1 opacity-25">
-        <div className="absolute top-1/4 left-1/3 w-72 h-72 bg-[#c5a059]/15 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#c5a059]/10 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#c5a05915_1px,transparent_1px),linear-gradient(to_bottom,#c5a05915_1px,transparent_1px)] bg-[size:4.5rem_4.5rem]" />
+        
+        {/* Subtle Luxury Watermark Typography */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-[18vw] tracking-[0.2em] text-[#c5a059]/10 select-none whitespace-nowrap">
+          LEADERSHIP
+        </div>
       </div>
 
       <div className="container-luxury relative z-10">
         
-        {/* Section Heading (Screenshot 2: MEET OUR LEADERS) */}
+        {/* Section Heading with High Contrast */}
         <div className="mb-16 sm:mb-24 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div>
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#3d060a]/80 border border-[#c5a059]/30 text-xs text-[#f0dbaf] mb-3">
-              <Sparkles className="w-3.5 h-3.5 text-[#e5a93b]" />
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5c0d13]/10 border border-[#5c0d13]/20 text-xs text-[#5c0d13] font-semibold mb-3">
+              <Sparkles className="w-3.5 h-3.5 text-[#b89047]" />
               <span>Visionary Executive Advisory</span>
             </div>
-            <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-wide text-[#d6b46f] uppercase">
+            <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-wide text-[#1b1615] uppercase">
               MEET OUR LEADERS
             </h2>
-            <div className="w-28 h-[2px] bg-gradient-to-r from-[#c5a059] to-transparent mt-3" />
+            <div className="w-28 h-[2px] bg-gradient-to-r from-[#b89047] to-transparent mt-3" />
           </div>
 
-          <div className="hidden lg:flex items-center gap-2 text-xs text-[#d8c2b3] font-light">
+          <div className="hidden lg:flex items-center gap-2 text-xs text-gray-600 font-medium">
             <span className="w-2 h-2 rounded-full bg-[#25d366] animate-ping" />
-            <span>Praveen Aradhya • Executive Office Active</span>
+            <span>Praveen Aradhya • Executive Office Active in Downtown Dubai</span>
           </div>
         </div>
 
-        {/* 3-Column Layout (Replicating Screenshot 2) */}
+        {/* 3-Column Layout (High Contrast on Luminous Sandstone) */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
           
-          {/* Left Column: Big Leadership Quote with Parallax Drift */}
+          {/* Left Column: Big Leadership Quote */}
           <div 
             className="lg:col-span-4 flex flex-col justify-center space-y-6 will-change-transform"
             style={{
@@ -158,15 +148,15 @@ export default function MeetLeaders({ onOpenConsultation }) {
               transition: 'transform 0.1s linear'
             }}
           >
-            <div className="w-14 h-[2px] bg-[#c5a059]/70" />
-            <blockquote className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-light leading-snug text-white/95">
+            <div className="w-14 h-[2px] bg-[#b89047]" />
+            <blockquote className="font-serif text-2xl sm:text-3xl lg:text-[34px] font-normal leading-snug text-[#1a1210]">
               "{LEADERSHIP_INFO.quote}"
             </blockquote>
             <div>
-              <p className="text-xs uppercase tracking-[0.2em] font-semibold text-[#c5a059]">
+              <p className="text-xs uppercase tracking-[0.2em] font-bold text-[#5c0d13]">
                 {LEADERSHIP_INFO.name}
               </p>
-              <p className="text-xs text-[#bfa796] font-light">
+              <p className="text-xs text-gray-600 font-light mt-0.5">
                 {LEADERSHIP_INFO.title} • {LEADERSHIP_INFO.firm}
               </p>
             </div>
@@ -185,11 +175,11 @@ export default function MeetLeaders({ onOpenConsultation }) {
               }}
               className="relative group max-w-[340px] w-full cursor-pointer will-change-transform"
             >
-              {/* Gold Ambient Backlight Glow */}
-              <div className="absolute -inset-3 bg-gradient-to-b from-[#c5a059]/40 to-[#580b12]/60 rounded-3xl blur-2xl opacity-60 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* Soft Warm Backlight Glow */}
+              <div className="absolute -inset-3 bg-gradient-to-b from-[#c5a059]/30 to-[#5c0d13]/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-100 transition-opacity duration-500" />
               
-              {/* Photo Card */}
-              <div className="relative rounded-2xl overflow-hidden border border-[#c5a059]/50 bg-[#350509] shadow-[0_25px_60px_rgba(0,0,0,0.85)] aspect-[4/5]">
+              {/* Photo Card with Rich Bevel Border */}
+              <div className="relative rounded-2xl overflow-hidden border-2 border-[#b89047]/60 bg-gray-900 shadow-[0_25px_60px_rgba(0,0,0,0.25)] aspect-[4/5]">
                 <img 
                   src={LEADERSHIP_INFO.photo} 
                   alt={LEADERSHIP_INFO.name} 
@@ -198,23 +188,23 @@ export default function MeetLeaders({ onOpenConsultation }) {
 
                 {/* Dynamic Specular Glare Lighting */}
                 <div 
-                  className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-35 transition-opacity duration-300"
+                  className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300"
                   style={{
                     background: `radial-gradient(circle at ${cardTilt.glareX}% ${cardTilt.glareY}%, rgba(255,255,255,0.7) 0%, transparent 60%)`
                   }}
                 />
                 
-                {/* Floating Brand Badge (Replicating Screenshot 2) */}
+                {/* Floating Brand Badge */}
                 <div 
                   style={{ transform: 'translateZ(30px)' }}
-                  className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#700e17] border border-[#c5a059]/70 shadow-xl flex items-center justify-center p-1 group-hover:scale-110 transition-transform"
+                  className="absolute top-4 left-4 w-12 h-12 rounded-full bg-[#5c0d13] border-2 border-[#f0dbaf] shadow-xl flex items-center justify-center p-1 group-hover:scale-110 transition-transform"
                 >
                   <span className="font-cinzel text-[8px] font-bold tracking-widest text-[#f0dbaf] text-center uppercase leading-tight">
                     BV<br/>DUBAI
                   </span>
                 </div>
 
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1e0204]/90 via-transparent to-transparent opacity-80" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-60" />
               </div>
 
               {/* Leader Attribution Below Photo */}
@@ -222,83 +212,83 @@ export default function MeetLeaders({ onOpenConsultation }) {
                 style={{ transform: 'translateZ(20px)' }}
                 className="mt-5 text-left"
               >
-                <h3 className="font-serif text-2xl font-normal text-white">
+                <h3 className="font-serif text-2xl font-normal text-gray-900">
                   {LEADERSHIP_INFO.name}
                 </h3>
-                <p className="text-xs text-[#d6b46f] tracking-wider uppercase font-medium">
+                <p className="text-xs text-[#8c6b2d] tracking-wider uppercase font-semibold">
                   {LEADERSHIP_INFO.title} • {LEADERSHIP_INFO.firm}
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Right Column: Visionary Narrative & Leadership Track Record */}
-          <div className="lg:col-span-4 flex flex-col justify-center space-y-6 text-[#ded0c3] font-light">
-            <h4 className="font-sans text-xs sm:text-sm font-bold tracking-[0.15em] text-[#d6b46f] uppercase leading-relaxed">
+          {/* Right Column: Visionary Narrative */}
+          <div className="lg:col-span-4 flex flex-col justify-center space-y-6 text-gray-700 font-light">
+            <h4 className="font-sans text-xs sm:text-sm font-bold tracking-[0.15em] text-[#5c0d13] uppercase leading-relaxed">
               {LEADERSHIP_INFO.heading}
             </h4>
 
             {LEADERSHIP_INFO.paragraphs.map((p, idx) => (
-              <p key={idx} className="text-xs sm:text-sm leading-relaxed text-[#f0e3d8]/90">
+              <p key={idx} className="text-xs sm:text-sm leading-relaxed text-gray-600">
                 {p}
               </p>
             ))}
 
             {/* Private Advisory Button */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <div className="pt-2">
               <button
                 onClick={onOpenConsultation}
-                className="btn-outline-gold text-xs tracking-wider uppercase py-3 px-6 group cursor-pointer flex items-center justify-center gap-2"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-[#5c0d13] hover:bg-[#7e131d] text-white text-xs font-semibold tracking-wider uppercase transition-all shadow-md hover:shadow-xl cursor-pointer group"
               >
                 <span>Request Private CEO Briefing</span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#c5a059] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#f0dbaf] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </button>
             </div>
           </div>
 
         </div>
 
-        {/* Live Animated Count-Up Stats Strip (Screenshot 2 Replicated) */}
+        {/* Live Animated Count-Up Stats Strip */}
         <div 
           ref={statsRef}
-          className="mt-18 sm:mt-24 pt-10 border-t border-[#c5a059]/20 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+          className="mt-18 sm:mt-24 pt-10 border-t border-[#c5a059]/30 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
         >
           {/* Stat 1: Years */}
-          <div className="p-5 rounded-2xl bg-black/30 border border-white/5 backdrop-blur-md hover:border-[#c5a059]/50 transition-all group">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-1 group-hover:text-[#f0dbaf] transition-colors">
+          <div className="p-5 rounded-2xl bg-white border border-[#c5a059]/30 shadow-md hover:shadow-xl transition-all group">
+            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#5c0d13] mb-1 group-hover:scale-105 transition-transform">
               {statsAnimated ? `${counters.years}+` : '15+'}
             </div>
-            <div className="text-[11px] sm:text-xs text-[#c5a059] tracking-wider uppercase font-medium">
+            <div className="text-[11px] sm:text-xs text-[#8c6b2d] tracking-wider uppercase font-semibold">
               Years Market Leadership
             </div>
           </div>
 
           {/* Stat 2: Capital */}
-          <div className="p-5 rounded-2xl bg-black/30 border border-white/5 backdrop-blur-md hover:border-[#c5a059]/50 transition-all group">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-1 group-hover:text-[#f0dbaf] transition-colors">
+          <div className="p-5 rounded-2xl bg-white border border-[#c5a059]/30 shadow-md hover:shadow-xl transition-all group">
+            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#5c0d13] mb-1 group-hover:scale-105 transition-transform">
               {statsAnimated ? `AED ${counters.capital}B+` : 'AED 4.8B+'}
             </div>
-            <div className="text-[11px] sm:text-xs text-[#c5a059] tracking-wider uppercase font-medium">
+            <div className="text-[11px] sm:text-xs text-[#8c6b2d] tracking-wider uppercase font-semibold">
               Transacted Capital
             </div>
           </div>
 
           {/* Stat 3: Satisfaction */}
-          <div className="p-5 rounded-2xl bg-black/30 border border-white/5 backdrop-blur-md hover:border-[#c5a059]/50 transition-all group">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-1 group-hover:text-[#f0dbaf] transition-colors">
+          <div className="p-5 rounded-2xl bg-white border border-[#c5a059]/30 shadow-md hover:shadow-xl transition-all group">
+            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#5c0d13] mb-1 group-hover:scale-105 transition-transform">
               {statsAnimated ? `${counters.satisfaction}%` : '99.4%'}
             </div>
-            <div className="text-[11px] sm:text-xs text-[#c5a059] tracking-wider uppercase font-medium">
+            <div className="text-[11px] sm:text-xs text-[#8c6b2d] tracking-wider uppercase font-semibold">
               Client Satisfaction
             </div>
           </div>
 
           {/* Stat 4: Golden Visa */}
-          <div className="p-5 rounded-2xl bg-black/30 border border-white/5 backdrop-blur-md hover:border-[#c5a059]/50 transition-all group">
-            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-1 group-hover:text-[#f0dbaf] transition-colors">
+          <div className="p-5 rounded-2xl bg-white border border-[#c5a059]/30 shadow-md hover:shadow-xl transition-all group">
+            <div className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-[#5c0d13] mb-1 group-hover:scale-105 transition-transform">
               {statsAnimated ? `${counters.hours} Hrs` : '48 Hrs'}
             </div>
-            <div className="text-[11px] sm:text-xs text-[#c5a059] tracking-wider uppercase font-medium">
+            <div className="text-[11px] sm:text-xs text-[#8c6b2d] tracking-wider uppercase font-semibold">
               Golden Visa Fast-Track
             </div>
           </div>
