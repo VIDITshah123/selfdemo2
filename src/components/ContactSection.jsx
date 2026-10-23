@@ -46,7 +46,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact-us" className="relative py-28 sm:py-36 bg-white text-gray-900 overflow-hidden border-t border-gray-100">
+    <section id="contact-us" className="relative py-16 sm:py-22 bg-white text-gray-900 overflow-hidden border-t border-gray-100">
       
       {/* Background Decorative Accents */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
@@ -58,8 +58,8 @@ export default function ContactSection() {
       <div className="container-luxury relative z-10">
         
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#5c0d13]/10 border border-[#5c0d13]/20 text-xs font-semibold text-[#5c0d13] mb-4 shadow-sm">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5c0d13]/10 border border-[#5c0d13]/20 text-xs font-semibold text-[#5c0d13] mb-3 shadow-sm">
             <Sparkles className="w-3.5 h-3.5 text-[#886934]" />
             <span className="tracking-wide uppercase text-[11px] font-bold">Confidential Advisory Access</span>
           </div>

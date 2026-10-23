@@ -27,7 +27,7 @@ export default function OffPlanShowcase({ onSelectProperty, onOpenConsultation, 
   };
 
   return (
-    <section id="off-plan-section" className="relative py-24 sm:py-32 bg-[#580b12] text-white overflow-hidden">
+    <section id="off-plan-section" className="relative py-14 sm:py-20 bg-[#580b12] text-white overflow-hidden">
       
       {/* Background Watermark (Screenshot 1 Replicated) */}
       <div className="watermark-text top-[8%] left-1/2 -translate-x-1/2 text-[14vw] tracking-[0.2em] text-white/[0.04] pointer-events-none select-none">
@@ -37,8 +37,8 @@ export default function OffPlanShowcase({ onSelectProperty, onOpenConsultation, 
       <div className="container-luxury relative z-10">
         
         {/* Rating Pill Top Center */}
-        <div className="flex flex-col items-center justify-center text-center mb-12 sm:mb-16">
-          <div className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full bg-[#3d060a]/70 border border-[#c5a059]/30 mb-4 backdrop-blur-sm shadow-md">
+        <div className="flex flex-col items-center justify-center text-center mb-8 sm:mb-10">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-[#3d060a]/70 border border-[#c5a059]/30 mb-3 backdrop-blur-sm shadow-md">
             <span className="text-sm font-semibold text-white">4.6</span>
             <div className="flex text-[#e5a93b]">
               {[...Array(5)].map((_, i) => (
@@ -50,16 +50,16 @@ export default function OffPlanShowcase({ onSelectProperty, onOpenConsultation, 
           <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl font-normal tracking-tight text-white">
             Off-Plan Opportunities
           </h2>
-          <p className="text-sm sm:text-base text-[#e5d2c2] max-w-xl mt-3 font-light">
+          <p className="text-sm sm:text-base text-[#e5d2c2] max-w-xl mt-2 font-light">
             Exclusive developer direct allocations with privileged payment plans and guaranteed capital growth in Dubai's premier enclaves.
           </p>
         </div>
 
         {/* Master Showcase Card (Replicating Screenshot 1) */}
-        <div className="bg-[#fbf9f6] text-[#1b1615] rounded-3xl overflow-hidden shadow-[0_30px_70px_rgba(0,0,0,0.65)] border border-[#c5a059]/30 grid grid-cols-1 lg:grid-cols-12 min-h-[500px]">
+        <div className="bg-[#fbf9f6] text-[#1b1615] rounded-3xl overflow-hidden shadow-[0_30px_70px_rgba(0,0,0,0.65)] border border-[#c5a059]/30 grid grid-cols-1 lg:grid-cols-12 min-h-[420px]">
           
           {/* Left Column: Visual Rendering with Price Pill & Arrow Controls */}
-          <div className="lg:col-span-8 relative min-h-[360px] sm:min-h-[460px] lg:min-h-full overflow-hidden group">
+          <div className="lg:col-span-8 relative min-h-[300px] sm:min-h-[380px] lg:min-h-full overflow-hidden group">
             <img 
               src={current.image} 
               alt={current.title} 

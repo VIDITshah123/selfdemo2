@@ -4,7 +4,7 @@ import { BRAND_INFO, DEVELOPERS, DUBAI_COMMUNITIES } from '../data/mockData';
 
 export default function Footer({ onOpenConsultation }) {
   return (
-    <footer id="contact-section" className="relative bg-[#1a0204] text-[#d6c4b6] pt-20 pb-12 border-t border-[#c5a059]/25 overflow-hidden">
+    <footer id="contact-section" className="relative bg-[#1a0204] text-[#d6c4b6] pt-14 pb-8 border-t border-[#c5a059]/25 overflow-hidden">
       
       {/* Background Watermark Accent */}
       <div className="watermark-text bottom-4 left-1/2 -translate-x-1/2 text-[15vw] opacity-15 pointer-events-none">
@@ -14,7 +14,7 @@ export default function Footer({ onOpenConsultation }) {
       <div className="container-luxury relative z-10">
         
         {/* Main Footer Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-16 border-b border-white/10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-white/10">
           
           {/* Column 1: Brand Info & Bio (4 cols) */}
           <div className="lg:col-span-4 space-y-5">

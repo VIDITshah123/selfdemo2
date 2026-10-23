@@ -42,7 +42,7 @@ export default function RoiCalculator({ onOpenConsultation }) {
   return (
     <section 
       id="roi-calculator"
-      className="relative py-28 sm:py-36 bg-gradient-to-b from-[#f9f7f2] via-[#f4efe6] to-[#f9f7f2] text-gray-900 overflow-hidden border-y border-[#c5a059]/25"
+      className="relative py-16 sm:py-22 bg-gradient-to-b from-[#f9f7f2] via-[#f4efe6] to-[#f9f7f2] text-gray-900 overflow-hidden border-y border-[#c5a059]/25"
     >
       {/* Background Architectural Grid Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-40">
@@ -56,8 +56,8 @@ export default function RoiCalculator({ onOpenConsultation }) {
       <div className="container-luxury relative z-10">
         
         {/* Section Title Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#5c0d13]/10 border border-[#5c0d13]/20 text-xs font-semibold text-[#5c0d13] mb-4 shadow-sm">
+        <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5c0d13]/10 border border-[#5c0d13]/20 text-xs font-semibold text-[#5c0d13] mb-3 shadow-sm">
             <Calculator className="w-4 h-4 text-[#886934]" />
             <span className="tracking-wide uppercase text-[11px] font-bold">Wealth & Portfolio Modeling</span>
           </div>

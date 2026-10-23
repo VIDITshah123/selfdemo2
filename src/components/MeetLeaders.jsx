@@ -96,9 +96,9 @@ export default function MeetLeaders({ onOpenConsultation }) {
 
   return (
     <section 
-      ref={sectionRef}
+      ref={sectionRef} 
       id="leadership-section" 
-      className="relative py-28 sm:py-36 bg-[#faf7f2] text-gray-900 overflow-hidden border-y border-[#c5a059]/25"
+      className="relative py-16 sm:py-22 bg-[#faf7f2] text-gray-900 overflow-hidden border-y border-[#c5a059]/25"
     >
       {/* Background Subtle Sandstone Architectural Grid */}
       <div 
@@ -119,7 +119,7 @@ export default function MeetLeaders({ onOpenConsultation }) {
       <div className="container-luxury relative z-10">
         
         {/* Section Heading with High Contrast */}
-        <div className="mb-16 sm:mb-24 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
+        <div className="mb-10 sm:mb-14 flex flex-col sm:flex-row sm:items-end justify-between gap-6">
           <div>
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5c0d13]/10 border border-[#5c0d13]/20 text-xs text-[#5c0d13] font-semibold mb-3">
               <Sparkles className="w-3.5 h-3.5 text-[#b89047]" />
@@ -251,7 +251,7 @@ export default function MeetLeaders({ onOpenConsultation }) {
         {/* Live Animated Count-Up Stats Strip */}
         <div 
           ref={statsRef}
-          className="mt-18 sm:mt-24 pt-10 border-t border-[#c5a059]/30 grid grid-cols-2 md:grid-cols-4 gap-6 text-center"
+          className="mt-10 sm:mt-12 pt-6 border-t border-[#c5a059]/30 grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 text-center"
         >
           {/* Stat 1: Years */}
           <div className="p-5 rounded-2xl bg-white border border-[#c5a059]/30 shadow-md hover:shadow-xl transition-all group">

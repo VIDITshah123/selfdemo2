@@ -15,11 +15,11 @@ export default function TestimonialsWall() {
   };
 
   return (
-    <section className="bg-white text-gray-900 py-24 sm:py-32 relative z-20 border-b border-gray-100">
+    <section className="bg-white text-gray-900 py-14 sm:py-20 relative z-20 border-b border-gray-100">
       <div className="container-luxury">
         
         {/* Top Center Rating & Heading (Screenshot 3 Replicated) */}
-        <div className="text-center mb-16 sm:mb-20">
+        <div className="text-center mb-10 sm:mb-12">
           <div className="inline-flex items-center gap-1 text-sm font-semibold text-gray-800 mb-2">
             <span>4.5</span>
             <Star className="w-4 h-4 fill-[#b89047] text-[#b89047]" />
@@ -34,7 +34,7 @@ export default function TestimonialsWall() {
         </div>
 
         {/* Testimonials Columns with Vertical Gold Dividers (Screenshot 3 Replicated) */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 items-stretch mb-14">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 items-stretch mb-8">
           {REVIEWS_WALL.map((rev) => (
             <div 
               key={rev.id} 

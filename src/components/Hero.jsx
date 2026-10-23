@@ -61,7 +61,7 @@ export default function Hero({ onSearchSubmit, onOpenConsultation, activeCurrenc
     <section 
       id="search-section" 
       onMouseMove={handleMouseMove}
-      className="relative min-h-[92vh] flex flex-col justify-between overflow-hidden"
+      className="relative min-h-[76vh] flex flex-col justify-between overflow-hidden"
     >
       {/* Background with Real Dynamic Parallax (Scroll + Mouse Shift) */}
       <div 
@@ -93,10 +93,10 @@ export default function Hero({ onSearchSubmit, onOpenConsultation, activeCurrenc
       </div>
 
       {/* Main Hero Content */}
-      <div className="relative z-10 container-luxury pt-12 sm:pt-20 pb-16 flex-1 flex flex-col items-center justify-center text-center">
+      <div className="relative z-10 container-luxury pt-8 sm:pt-14 pb-10 flex-1 flex flex-col items-center justify-center text-center">
         
         {/* Rating Pill Top Center */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#3e070c]/85 border border-[#c5a059]/40 backdrop-blur-md mb-6 shadow-xl animate-fade-in hover:scale-105 transition-transform cursor-default">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#3e070c]/85 border border-[#c5a059]/40 backdrop-blur-md mb-4 shadow-xl animate-fade-in hover:scale-105 transition-transform cursor-default">
           <span className="text-white font-bold text-sm tracking-wide">{BRAND_INFO.googleRating}</span>
           <div className="flex items-center text-[#e5a93b]">
             {[...Array(5)].map((_, i) => (
@@ -106,17 +106,17 @@ export default function Hero({ onSearchSubmit, onOpenConsultation, activeCurrenc
         </div>
 
         {/* Hero Grand Title */}
-        <div className="max-w-4xl mx-auto space-y-3 mb-4">
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-7xl font-light tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]">
+        <div className="max-w-4xl mx-auto space-y-2 mb-3">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-light tracking-tight text-white drop-shadow-[0_4px_16px_rgba(0,0,0,0.6)]">
             BELLAVIERRE
           </h1>
-          <p className="font-cinzel text-xl sm:text-2xl md:text-3xl tracking-[0.25em] text-[#d6b46f] font-normal uppercase drop-shadow-md">
+          <p className="font-cinzel text-lg sm:text-xl md:text-2xl tracking-[0.25em] text-[#d6b46f] font-normal uppercase drop-shadow-md">
             P R O P E R T I E S
           </p>
         </div>
 
         {/* Google Reviews Badge */}
-        <div className="flex items-center justify-center gap-1.5 text-xs sm:text-sm text-[#e6d8cb] font-light mb-10 tracking-wider">
+        <div className="flex items-center justify-center gap-1.5 text-xs text-[#e6d8cb] font-light mb-6 tracking-wider">
           <span className="text-[#c5a059] font-medium">+388 Reviews</span>
           <span>on</span>
           <span className="font-semibold text-white tracking-wide">Google</span>
@@ -219,7 +219,7 @@ export default function Hero({ onSearchSubmit, onOpenConsultation, activeCurrenc
         </div>
 
         {/* Developer Network Trust Strip (Replicating Screenshot 3) */}
-        <div className="w-full max-w-4xl mx-auto mt-12 pt-6 border-t border-white/10">
+        <div className="w-full max-w-4xl mx-auto mt-6 pt-3 border-t border-white/10">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
             <span className="text-xs uppercase tracking-widest text-[#c5a059] font-medium whitespace-nowrap">
               We work with

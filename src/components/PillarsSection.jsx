@@ -13,13 +13,13 @@ export default function PillarsSection({ onOpenConsultation }) {
   };
 
   return (
-    <section className="bg-white text-gray-900 py-24 sm:py-32 relative z-20 border-b border-gray-100">
+    <section className="bg-white text-gray-900 py-14 sm:py-20 relative z-20 border-b border-gray-100">
       <div className="container-luxury">
         
         {/* Top Row: 3 Editorial Value Propositions (Screenshot 2 Replicated) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 lg:gap-14 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 mb-12">
           {VALUE_PILLARS.topEditorial.map((item, idx) => (
-            <div key={idx} className="space-y-3 border-l-2 border-[#b89047]/40 pl-5">
+            <div key={idx} className="space-y-2 border-l-2 border-[#b89047]/40 pl-5">
               <h3 className="font-serif text-2xl sm:text-3xl font-light text-[#1a1210]">
                 {item.title}
               </h3>
@@ -31,11 +31,11 @@ export default function PillarsSection({ onOpenConsultation }) {
         </div>
 
         {/* Bottom Row: 3 Bronze-Gold Cards (Screenshot 2 Replicated) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           {VALUE_PILLARS.bronzeCards.map((card, idx) => (
             <div
               key={idx}
-              className="relative rounded-2xl bg-gradient-to-br from-[#967848] via-[#8c6f3f] to-[#7d6132] text-white p-8 sm:p-9 shadow-xl overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              className="relative rounded-2xl bg-gradient-to-br from-[#967848] via-[#8c6f3f] to-[#7d6132] text-white p-6 sm:p-7 shadow-xl overflow-hidden group transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
               style={{
                 boxShadow: '0 20px 40px -15px rgba(136, 105, 52, 0.4)'
               }}

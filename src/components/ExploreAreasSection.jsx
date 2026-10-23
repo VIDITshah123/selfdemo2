@@ -108,7 +108,7 @@ export default function ExploreAreasSection({ onOpenConsultation }) {
     <section 
       ref={sectionRef} 
       id="areas-section" 
-      className="bg-white text-gray-900 py-24 sm:py-32 relative z-20 border-b border-gray-100 overflow-hidden"
+      className="bg-white text-gray-900 py-14 sm:py-20 relative z-20 border-b border-gray-100 overflow-hidden"
     >
       {/* Background Architectural Geometry Lines */}
       <div className="absolute inset-0 pointer-events-none opacity-40 select-none">
@@ -123,9 +123,9 @@ export default function ExploreAreasSection({ onOpenConsultation }) {
       <div className="container-luxury relative z-10">
         
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-12 gap-6 border-b border-gray-100 pb-8">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between mb-8 gap-5 border-b border-gray-100 pb-5">
           <div>
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#5c0d13]/10 text-[#5c0d13] text-xs font-semibold mb-3">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#5c0d13]/10 text-[#5c0d13] text-xs font-semibold mb-2.5">
               <Compass className="w-3.5 h-3.5 text-[#886934]" />
               <span className="uppercase tracking-wider text-[11px] font-bold">Curated Geographical Architecture</span>
             </div>
@@ -202,7 +202,7 @@ export default function ExploreAreasSection({ onOpenConsultation }) {
                 ref={stageRef}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                className="relative flex flex-col md:flex-row gap-4 h-[580px] sm:h-[620px] w-full"
+                className="relative flex flex-col md:flex-row gap-4 h-[450px] sm:h-[480px] w-full"
               >
                 
                 {/* 1. PRIMARY FOCAL ENCLAVE (Dynamic Dominant 65% Slice) */}
@@ -409,7 +409,7 @@ export default function ExploreAreasSection({ onOpenConsultation }) {
                 ref={stageRef}
                 onMouseMove={handleMouseMove}
                 onMouseLeave={handleMouseLeave}
-                className="relative rounded-[32px] overflow-hidden bg-gray-950 shadow-2xl border-2 border-[#c5a059]/40 h-[580px] sm:h-[620px] w-full group"
+                className="relative rounded-[32px] overflow-hidden bg-gray-950 shadow-2xl border-2 border-[#c5a059]/40 h-[450px] sm:h-[480px] w-full group"
               >
                 {/* 21:9 Curved Panoramic Lens */}
                 <div 
@@ -501,7 +501,7 @@ export default function ExploreAreasSection({ onOpenConsultation }) {
             </div>
 
             {/* List of Enclaves */}
-            <div className="space-y-1.5 max-h-[460px] overflow-y-auto pr-1">
+            <div className="space-y-1.5 max-h-[360px] overflow-y-auto pr-1">
               {filteredList.map((area, idx) => {
                 const isActive = activeAreaKey === area.name;
                 const areaData = DUBAI_AREAS_DATA.allAreas[area.name];
