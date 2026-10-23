@@ -38,33 +38,71 @@ export const DEVELOPERS = [
 ];
 
 export const DUBAI_AREAS_DATA = {
-  featured: [
-    {
-      id: "akoya-oxygen",
-      name: "AKOYA OXYGEN / DAMAC LAGOONS",
+  allAreas: {
+    "Damac Lagoons": {
+      name: "DAMAC LAGOONS / AKOYA",
       tagline: "Eco-Luxury Golf & Water Community",
       priceRange: "AED 2.8M - 18M",
-      yield: "8.4%",
+      yield: "8.6%",
       image: "/assets/akoya_golf.jpg",
-      description: "A tranquil paradise of championship golf fairways, crystal-clear lagoons, and Mediterranean-inspired cluster villas."
+      description: "A tranquil Mediterranean water-inspired paradise with crystal lagoons, white sand beaches, and golf villas."
     },
-    {
-      id: "business-bay",
+    "Business Bay": {
       name: "BUSINESS BAY",
       tagline: "The Manhattan of Dubai",
       priceRange: "AED 1.9M - 35M",
       yield: "9.1%",
       image: "/assets/business_bay.jpg",
       description: "A vibrant waterfront cosmopolitan hub along the Dubai Canal, featuring luxury high-rises and world-class dining."
+    },
+    "Palm Jumeirah": {
+      name: "PALM JUMEIRAH",
+      tagline: "The World's Eighth Wonder",
+      priceRange: "AED 12M - 180M",
+      yield: "7.5%",
+      image: "/assets/palm_crown_villa.jpg",
+      description: "Prestigious fronds offering custom oceanfront mansions, private beach access, and panoramic Arabian Gulf sunsets."
+    },
+    "Downtown Dubai": {
+      name: "DOWNTOWN DUBAI",
+      tagline: "The Center of Now",
+      priceRange: "AED 3.5M - 85M",
+      yield: "8.2%",
+      image: "/assets/dubai_penthouse_skyline.jpg",
+      description: "Iconic high-altitude living surrounding the Burj Khalifa, Dubai Mall, and luxury fashion residences."
+    },
+    "Damac Hills": {
+      name: "DAMAC HILLS",
+      tagline: "Trump International Golf Estates",
+      priceRange: "AED 3.2M - 28M",
+      yield: "7.9%",
+      image: "/assets/akoya_golf.jpg",
+      description: "Championship golf community with rolling greens, skate parks, equestrian stables, and standalone mansions."
+    },
+    "Al Furjan": {
+      name: "AL FURJAN",
+      tagline: "Family Communities & Metro Connected",
+      priceRange: "AED 1.8M - 8.5M",
+      yield: "8.1%",
+      image: "/assets/plagette_villa_interior.jpg",
+      description: "Modern master development with landscaped pathways, village centers, and direct transit access."
+    },
+    "Arjan": {
+      name: "ARJAN",
+      tagline: "High-Yield Modern Residences",
+      priceRange: "AED 850K - 4.2M",
+      yield: "9.3%",
+      image: "/assets/business_bay.jpg",
+      description: "Boasting some of Dubai's highest net rental yields, popular with global expatriates and short-term holiday lets."
     }
-  ],
+  },
   sidebarList: [
-    { name: "Damac Lagoons", type: "Villas & Townhouses", yield: "8.6%", activeId: "akoya-oxygen" },
-    { name: "Al Furjan", type: "Family Communities & Metro", yield: "8.1%", activeId: "akoya-oxygen" },
-    { name: "Damac Hills", type: "Golf Estates & Mansions", yield: "7.9%", activeId: "akoya-oxygen" },
-    { name: "Arjan", type: "High-Yield Apartments", yield: "9.3%", activeId: "business-bay" },
-    { name: "Palm Jumeirah", type: "Beachfront Super-Luxury", yield: "7.5%", activeId: "palm-crown-villas" },
-    { name: "Downtown Dubai", type: "Burj Khalifa Penthouses", yield: "8.2%", activeId: "cavalli-couture-penthouse" }
+    { name: "Damac Lagoons", type: "Villas & Townhouses", yield: "8.6%" },
+    { name: "Al Furjan", type: "Family Communities & Metro", yield: "8.1%" },
+    { name: "Damac Hills", type: "Golf Estates & Mansions", yield: "7.9%" },
+    { name: "Arjan", type: "High-Yield Apartments", yield: "9.3%" },
+    { name: "Palm Jumeirah", type: "Beachfront Super-Luxury", yield: "7.5%" },
+    { name: "Downtown Dubai", type: "Burj Khalifa Penthouses", yield: "8.2%" }
   ]
 };
 
