@@ -42,14 +42,21 @@ export const DUBAI_AREAS_DATA = {
     "Damac Lagoons": {
       name: "DAMAC LAGOONS",
       fullName: "DAMAC LAGOONS & AKOYA ESTATES",
+      arabicName: "داماك لاجونز",
       tagline: "Eco-Luxury Golf & Mediterranean Water Paradise",
       priceRange: "AED 2.8M - 18M",
       yield: "8.6%",
+      yieldRating: "Prime High Yield",
       appreciation: "+12.8% / yr",
       coordinates: "25.0210° N, 55.2341° E",
       category: "Golf & Lagoons",
       image: "/assets/akoya_golf.jpg",
       description: "A tranquil Mediterranean water-inspired paradise with crystal azure lagoons, white sand beaches, and golf villas.",
+      lifestyleBullets: [
+        "Crystal Swimmable Lagoons & Water Cinema",
+        "Championship 18-Hole Trump International Course",
+        "Private Island Clubhouses & Wellness Spas"
+      ],
       hotspots: [
         { x: 28, y: 55, label: "Crystal Azure Lagoon", desc: "Swimmable freshwater lagoon with floating cinema" },
         { x: 74, y: 38, label: "Championship 18-Hole Golf", desc: "PGA standard international greens" },
@@ -59,14 +66,21 @@ export const DUBAI_AREAS_DATA = {
     "Business Bay": {
       name: "BUSINESS BAY",
       fullName: "BUSINESS BAY & DUBAI CANAL",
+      arabicName: "الخليج التجاري",
       tagline: "The Manhattan of Dubai & Canal Promenade",
       priceRange: "AED 1.9M - 35M",
       yield: "9.1%",
+      yieldRating: "Top Rental Yield",
       appreciation: "+10.4% / yr",
       coordinates: "25.1837° N, 55.2666° E",
       category: "Urban Downtown",
       image: "/assets/business_bay.jpg",
       description: "A vibrant waterfront cosmopolitan hub along the Dubai Canal, featuring luxury high-rises and world-class dining.",
+      lifestyleBullets: [
+        "Direct Dubai Water Canal Boardwalk & Yacht Marinas",
+        "5-Minute Commute to Downtown & DIFC Financial Hub",
+        "High Occupancy & Short-Term Holiday Let Dominance"
+      ],
       hotspots: [
         { x: 45, y: 58, label: "Dubai Water Canal", desc: "Marine promenade direct to Arabian Gulf" },
         { x: 25, y: 38, label: "Marasi Marina Penthouses", desc: "Private floating villas & superyacht berths" },
@@ -76,14 +90,21 @@ export const DUBAI_AREAS_DATA = {
     "Palm Jumeirah": {
       name: "PALM JUMEIRAH",
       fullName: "PALM JUMEIRAH OCEANFRONT FRONDS",
+      arabicName: "نخلة جميرا",
       tagline: "The World's Eighth Wonder & Billionaire Mansions",
       priceRange: "AED 12M - 180M",
       yield: "7.5%",
+      yieldRating: "Ultra-Prime Trophy Asset",
       appreciation: "+14.6% / yr",
       coordinates: "25.1124° N, 55.1390° E",
       category: "Waterfront & Beach",
       image: "/assets/palm_crown_villa.jpg",
       description: "Prestigious fronds offering custom oceanfront mansions, private beach access, and panoramic Arabian Gulf sunsets.",
+      lifestyleBullets: [
+        "Private Direct Beachfront with Deepwater Boat Slips",
+        "Atlantis The Royal, One&Only & Nobu Dining",
+        "Global Trophy Asset with Record Capital Appreciation"
+      ],
       hotspots: [
         { x: 28, y: 38, label: "Atlantis The Royal Vista", desc: "World's most celebrated ultra-luxury resort" },
         { x: 72, y: 64, label: "Bespoke Oceanfront Frond", desc: "Private white-sand beach with boat slip" },
@@ -93,14 +114,21 @@ export const DUBAI_AREAS_DATA = {
     "Downtown Dubai": {
       name: "DOWNTOWN DUBAI",
       fullName: "DOWNTOWN DUBAI & BURJ KHALIFA",
+      arabicName: "وسط مدينة دبي",
       tagline: "The Center of Now & High-Altitude Penthouses",
       priceRange: "AED 3.5M - 85M",
       yield: "8.2%",
+      yieldRating: "Global Capital Hub",
       appreciation: "+9.8% / yr",
       coordinates: "25.1972° N, 55.2744° E",
       category: "Urban Downtown",
       image: "/assets/dubai_penthouse_skyline.jpg",
       description: "Iconic high-altitude living surrounding the Burj Khalifa, Dubai Mall, and luxury fashion residences.",
+      lifestyleBullets: [
+        "Panoramic Vistas of Burj Khalifa & Dubai Fountain",
+        "Direct Air-Conditioned Skybridges to Dubai Mall",
+        "Dubai Opera & World-Class Performing Arts Quarter"
+      ],
       hotspots: [
         { x: 34, y: 28, label: "Burj Khalifa Tower Axis", desc: "World's tallest residential marvel" },
         { x: 68, y: 56, label: "Dubai Opera Promenade", desc: "Cultural district & fine arts quarter" },
@@ -110,14 +138,21 @@ export const DUBAI_AREAS_DATA = {
     "Damac Hills": {
       name: "DAMAC HILLS",
       fullName: "DAMAC HILLS GOLF COMMUNITY",
+      arabicName: "داماك هيلز",
       tagline: "Trump International Golf Estates & Green Fairways",
       priceRange: "AED 3.2M - 28M",
       yield: "7.9%",
+      yieldRating: "Championship Greens",
       appreciation: "+8.9% / yr",
       coordinates: "25.0320° N, 55.2480° E",
       category: "Golf & Lagoons",
       image: "/assets/akoya_golf.jpg",
       description: "Championship golf community with rolling greens, skate parks, equestrian stables, and standalone mansions.",
+      lifestyleBullets: [
+        "Trump International Golf Club Dubai & Clubhouse",
+        "Malibu Bay Wave Pool & Adventure Stables",
+        "Private Gated Master Enclave with 24/7 Concierge"
+      ],
       hotspots: [
         { x: 42, y: 46, label: "Trump International Golf Club", desc: "Championship par-71 links-style course" },
         { x: 75, y: 35, label: "Equestrian & Skate Parks", desc: "Family adventure amenities & stables" }
@@ -126,14 +161,21 @@ export const DUBAI_AREAS_DATA = {
     "Al Furjan": {
       name: "AL FURJAN",
       fullName: "AL FURJAN MASTER ENCLAVE",
+      arabicName: "الفرجان",
       tagline: "Family Communities & Metro Route 2020",
       priceRange: "AED 1.8M - 8.5M",
       yield: "8.1%",
+      yieldRating: "Family & Transit Hub",
       appreciation: "+8.5% / yr",
       coordinates: "25.0192° N, 55.1483° E",
       category: "Golf & Lagoons",
       image: "/assets/plagette_villa_interior.jpg",
       description: "Modern master development with landscaped pathways, village centers, and direct transit access.",
+      lifestyleBullets: [
+        "Metro Route 2020 Direct Station Access",
+        "Al Furjan Club Pavilion & Sports Academies",
+        "Interconnected Green Trails & Top British Schools"
+      ],
       hotspots: [
         { x: 38, y: 48, label: "Metro Route 2020 Station", desc: "Direct 15-min transit to Expo City & Marina" },
         { x: 68, y: 62, label: "Furjan Club Pavilion", desc: "Community pools, tennis courts & gourmet dining" }
@@ -142,14 +184,21 @@ export const DUBAI_AREAS_DATA = {
     "Arjan": {
       name: "ARJAN",
       fullName: "ARJAN RESIDENTIAL ENCLAVE",
+      arabicName: "أرجان",
       tagline: "High-Yield Modern Residences & Miracle Garden",
       priceRange: "AED 850K - 4.2M",
       yield: "9.3%",
+      yieldRating: "Highest ROI Enclave",
       appreciation: "+10.1% / yr",
       coordinates: "25.0601° N, 55.2410° E",
       category: "Urban Downtown",
       image: "/assets/business_bay.jpg",
       description: "Boasting some of Dubai's highest net rental yields, popular with global expatriates and short-term holiday lets.",
+      lifestyleBullets: [
+        "Highest Net Rental Yield in Dubai (9.3%+)",
+        "Walking Distance to Dubai Miracle Garden",
+        "Direct Access to Umm Suqeim Road & E311 Corridor"
+      ],
       hotspots: [
         { x: 42, y: 42, label: "Dubai Miracle Garden Axis", desc: "World's largest natural floral sanctuary" },
         { x: 70, y: 58, label: "High-Yield Apartment Cluster", desc: "Exceptional 9.3% net rental return" }
